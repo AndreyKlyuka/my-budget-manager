@@ -6,8 +6,10 @@
     "my-budget-manager": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
+        "@schematics/angular": {
+          "component": {
+            "changeDetection": "OnPush"
+          }
         }
       },
       "root": "",
@@ -100,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
