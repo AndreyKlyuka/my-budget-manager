@@ -1,0 +1,13 @@
+@import 'styles/variable';
+
+.navigation {
+    background-color: $beige;
+    color: $black;
+    max-width: 240px;
+    height: 100vh;
+    &__list-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
