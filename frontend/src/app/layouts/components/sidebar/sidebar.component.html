@@ -1,12 +1,5 @@
 <aside class="navigation">
     <nav class="navigation__container">
-        <ul class="navigation__list">
-            <li class="navigation__list-item navigation__logo">It`s an awesome logo</li>
-            <app-list-item
-                class="navigation__list-item"
-                *ngFor="let item of navigationItems"
-                [item]="item"></app-list-item>
-            <app-list-item class="navigation__list-item" [item]="logoutItem"></app-list-item>
-        </ul>
+        <app-navigation-list [items]="navigationItems"> </app-navigation-list>
     </nav>
 </aside>
