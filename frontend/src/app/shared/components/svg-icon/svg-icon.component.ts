@@ -13,7 +13,8 @@ export class SvgIconComponent {
     @Input() width?: string;
     @Input() height?: string;
 
-    public getPath(): string {
-        return 'assets/images/sprite.svg#' + this.name;
+    private assetsUrl: string = 'assets/images/sprite.svg#';
+    public get path(): string {
+        return this.assetsUrl + this.name;
     }
 }

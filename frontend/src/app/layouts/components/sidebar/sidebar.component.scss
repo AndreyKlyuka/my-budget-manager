@@ -5,9 +5,15 @@
     color: $black;
     max-width: 240px;
     height: 100vh;
-    &__list-item {
+    &__container {
+        height: 100%;
+    }
+    &__list {
+        height: 100%;
         display: flex;
-        align-items: center;
-        gap: 10px;
+        flex-direction: column;
+    }
+    &__list-item:last-child {
+        margin-top: auto;
     }
 }

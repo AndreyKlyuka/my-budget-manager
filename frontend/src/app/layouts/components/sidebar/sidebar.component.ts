@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NavigationItem } from './interfaces/navigation-item.interface';
-import { SIDEBAR_NAVIGATION_DATA } from './sidebar-data';
+import { LOGOUT_ITEM, NAVIGATION_ITEMS } from './sidebar-data';
 
 @Component({
     selector: 'app-sidebar',
@@ -9,5 +9,6 @@ import { SIDEBAR_NAVIGATION_DATA } from './sidebar-data';
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SidebarComponent {
-    public navigationItems: NavigationItem[] = SIDEBAR_NAVIGATION_DATA;
+    public navigationItems: NavigationItem[] = NAVIGATION_ITEMS;
+    public logoutItem: NavigationItem = LOGOUT_ITEM;
 }

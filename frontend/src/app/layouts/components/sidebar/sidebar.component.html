@@ -1,11 +1,12 @@
 <aside class="navigation">
     <nav class="navigation__container">
         <ul class="navigation__list">
-            <li class="navigation__list-item navigation__logo">Its awesome logo</li>
-            <li *ngFor="let item of navigationItems" class="navigation__list-item">
-                <app-svg-icon color="black" size="18px" [name]="item.iconName"></app-svg-icon>
-                <span>{{ item.name }}</span>
-            </li>
+            <li class="navigation__list-item navigation__logo">It`s an awesome logo</li>
+            <app-list-item
+                class="navigation__list-item"
+                *ngFor="let item of navigationItems"
+                [item]="item"></app-list-item>
+            <app-list-item class="navigation__list-item" [item]="logoutItem"></app-list-item>
         </ul>
     </nav>
 </aside>
