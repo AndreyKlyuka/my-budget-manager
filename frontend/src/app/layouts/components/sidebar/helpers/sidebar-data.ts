@@ -1,6 +1,6 @@
-import { NavigationItem } from './interfaces/navigation-item.interface';
-import { SidebarRouts } from './enums/sidebar-routs.enum';
-import { capitalizeFirstLetter } from './helpers/capitalize-first-letter.helper';
+import { NavigationItem } from '../interfaces/navigation-item.interface';
+import { SidebarRouts } from '../enums/sidebar-routs.enum';
+import { capitalizeFirstLetter } from './capitalize-first-letter.helper';
 
 export const LOGO_ITEM: NavigationItem = {
     name: 'MY BUDGET APP',
