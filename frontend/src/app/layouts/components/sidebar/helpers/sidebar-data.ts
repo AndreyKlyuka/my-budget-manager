@@ -2,6 +2,11 @@ import { NavigationItem } from './interfaces/navigation-item.interface';
 import { SidebarRouts } from './enums/sidebar-routs.enum';
 import { capitalizeFirstLetter } from './helpers/capitalize-first-letter.helper';
 
+export const LOGO_ITEM: NavigationItem = {
+    name: 'MY BUDGET APP',
+    route: `/`,
+    iconName: SidebarRouts.SETTING,
+};
 export const NAVIGATION_ITEMS: NavigationItem[] = [
     {
         name: capitalizeFirstLetter(SidebarRouts.DASHBOARD),
