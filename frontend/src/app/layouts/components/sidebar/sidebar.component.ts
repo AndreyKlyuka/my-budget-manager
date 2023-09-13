@@ -1,9 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import {
-    LOGO_ITEM,
-    LOGOUT_ITEM,
-    NAVIGATION_ITEMS,
-} from '@layouts/components/sidebar/helpers/sidebar-data';
+import { LOGO_ITEM, LOGOUT_ITEM, NAVIGATION_ITEMS } from '@layouts/helpers/sidebar-data';
 import { NavigationItem } from '@layouts/interfaces/navigation-item.interface';
 import { ListItem } from '@shared/interfaces/list-item.interface';
 

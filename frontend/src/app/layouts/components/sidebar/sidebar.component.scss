@@ -5,7 +5,7 @@ $sidebar-width: 240px;
 .navigation {
     background-color: $beige;
     color: $black;
-    max-width: $sidebar-width;
+    min-width: $sidebar-width;
     height: 100vh;
     &__container {
         height: 100%;
