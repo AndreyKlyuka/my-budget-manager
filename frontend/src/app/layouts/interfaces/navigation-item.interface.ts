@@ -1,10 +1,9 @@
-export interface NavigationItem {
-    name: string;
+import { ListItem } from '@shared/interfaces/list-item.interface';
+
+export interface NavigationItem extends ListItem {
     route: string;
-    iconName?: string;
     badge?: Badge;
 }
-
 interface Badge {
     name: string;
     count?: number;

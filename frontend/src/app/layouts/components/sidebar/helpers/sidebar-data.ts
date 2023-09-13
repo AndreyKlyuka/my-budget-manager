@@ -1,5 +1,5 @@
-import { NavigationItem } from '../interfaces/navigation-item.interface';
-import { SidebarRouts } from '../enums/sidebar-routs.enum';
+import { NavigationItem } from '@layouts/interfaces/navigation-item.interface';
+import { SidebarRouts } from '@layouts/enums/sidebar-routs.enum';
 import { capitalizeFirstLetter } from './capitalize-first-letter.helper';
 
 export const LOGO_ITEM: NavigationItem = {

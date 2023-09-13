@@ -4,7 +4,8 @@ import {
     LOGOUT_ITEM,
     NAVIGATION_ITEMS,
 } from '@layouts/components/sidebar/helpers/sidebar-data';
-import { NavigationItem } from '@layouts/components/sidebar/interfaces/navigation-item.interface';
+import { NavigationItem } from '@layouts/interfaces/navigation-item.interface';
+import { ListItem } from '@shared/interfaces/list-item.interface';
 
 @Component({
     selector: 'app-sidebar',
@@ -14,4 +15,10 @@ import { NavigationItem } from '@layouts/components/sidebar/interfaces/navigatio
 })
 export class SidebarComponent {
     public navigationItems: NavigationItem[] = [LOGO_ITEM, ...NAVIGATION_ITEMS, LOGOUT_ITEM];
+    public navigationItemsHandler = (item: NavigationItem): ListItem => {
+        return {
+            name: item.name,
+            iconName: item.iconName,
+        };
+    };
 }
