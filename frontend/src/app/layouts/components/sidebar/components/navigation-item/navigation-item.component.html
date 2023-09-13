@@ -1,4 +1,8 @@
 <li class="item">
-    <app-svg-icon color="black" size="18px" [name]="item.iconName"></app-svg-icon>
+    <app-svg-icon
+        *ngIf="item.iconName"
+        color="black"
+        size="18px"
+        [name]="item.iconName"></app-svg-icon>
     <span>{{ item.name }}</span>
 </li>

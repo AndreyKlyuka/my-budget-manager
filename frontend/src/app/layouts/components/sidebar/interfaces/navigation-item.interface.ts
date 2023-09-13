@@ -1,7 +1,7 @@
 export interface NavigationItem {
     name: string;
-    iconName: string;
     route: string;
+    iconName?: string;
     badge?: Badge;
 }
 

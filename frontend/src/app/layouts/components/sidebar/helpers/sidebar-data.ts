@@ -5,7 +5,6 @@ import { capitalizeFirstLetter } from './capitalize-first-letter.helper';
 export const LOGO_ITEM: NavigationItem = {
     name: 'MY BUDGET APP',
     route: `/`,
-    iconName: SidebarRouts.SETTING,
 };
 export const NAVIGATION_ITEMS: NavigationItem[] = [
     {
