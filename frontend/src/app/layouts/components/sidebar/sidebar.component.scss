@@ -1,0 +1,13 @@
+@import 'styles/variable';
+
+$sidebar-width: 240px;
+
+.navigation {
+    background-color: $beige;
+    color: $black;
+    min-width: $sidebar-width;
+    height: 100vh;
+    &__container {
+        height: 100%;
+    }
+}

@@ -6,8 +6,10 @@
     "my-budget-manager": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
+        "@schematics/angular": {
+          "component": {
+            "changeDetection": "OnPush"
+          }
         }
       },
       "root": "",
@@ -32,6 +34,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -100,5 +107,13 @@
         }
       }
     }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "style": "scss"
+    }
+  },
+  "cli": {
+    "analytics": false
   }
 }
