@@ -1,0 +1,13 @@
+.list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &__item {
+        &:first-child {
+            margin: 20px auto;
+        }
+        &:last-child {
+            margin-top: auto;
+        }
+    }
+}
